@@ -37,6 +37,9 @@ The expected minimum amount of time each Sprint for each category is as follows:
 |10/10/26  |11:00pm   |IM      |Initialized Supabase with two tables for app|60           |
 |10/12/26  |10:15am   |MTG     |Caught Toby up to speed, created Google auth|60           |
 |10/12/26  |8:00pm    |IM      |Loaded Hymns from Supabase with inital load |70           |
+|10/13/26  |11:00pm   |TP      |Supabase videos, sprint planning, PowerPoint|60           |
+|10/14/26  |10:15am   |MTG     |Present PowerPoint for class                |60           |
+|10/16/26  |10:00pm   |IM      |Finished three main screens for app         |211          |
 
 _Note: Add more rows as needed._
 
