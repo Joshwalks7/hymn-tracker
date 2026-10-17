@@ -1,12 +1,13 @@
-import { ImageBackground, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function HomeHeader() {
   return (
-    <ImageBackground
-      source={require('../../assets/images/salt_lake_temple.jpg')}
-      imageStyle={styles.backgroundImage}
-      style={styles.header}
-    >
+    <View style={styles.header}>
+      <Image
+        source={require('../../assets/images/salt_lake_temple.jpg')}
+        resizeMode="cover"
+        style={styles.backgroundImage}
+      />
       <View style={styles.overlay}>
         <View>
           <Text style={styles.eyebrow}>Welcome back to the</Text>
@@ -16,7 +17,7 @@ export default function HomeHeader() {
           <Text style={styles.profileText}>JW</Text>
         </Pressable>
       </View>
-    </ImageBackground>
+    </View>
   );
 }
 
@@ -24,13 +25,21 @@ const styles = StyleSheet.create({
   header: {
     borderRadius: 20,
     overflow: 'hidden',
+    position: 'relative',
   },
   backgroundImage: {
+    bottom: 0,
     borderRadius: 20,
+    height: '100%',
+    left: 0,
+    position: 'absolute',
+    right: 0,
+    top: 0,
+    width: '100%',
   },
   overlay: {
     alignItems: 'center',
-    backgroundColor: 'rgba(20, 31, 27, 0.48)',
+    backgroundColor: 'rgba(20, 31, 27, 0.32)',
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingBottom: 24,
